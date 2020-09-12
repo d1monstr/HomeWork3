@@ -8,21 +8,21 @@
     "ogrn": "7686 09860 569578 08678",
     "securities": [
       {
-        "id": 1,
+        "id": 11,
         "endDate": "29.11.2024",
         "codeСurrency": "USD",
         "code" : "secur11",
         "value": 5314314
       },
       {
-        "id": 2,
+        "id": 12,
         "endDate": "21.06.2019",
         "codeСurrency": "EU",
         "code" : "secur12",
         "value": 1314314
       },
       {
-        "id": 3,
+        "id": 13,
         "endDate": "12.09.2027",
         "codeСurrency": "RUB",
         "code" : "secur13",
@@ -39,21 +39,21 @@
     "ogrn": "52535 235 2134 32432",
     "securities": [
       {
-        "id": 1,
+        "id": 21,
         "endDate": "11.03.2022",
         "codeСurrency": "USD",
         "code" : "secur21",
         "value": 1351513
       },
       {
-        "id": 2,
+        "id": 22,
         "endDate": "21.10.1999",
         "codeСurrency": "EU",
         "code" : "secur22",
         "value": 53462414
       },
       {
-        "id": 3,
+        "id": 23,
         "endDate": "12.12.2022",
         "codeСurrency": "RUB",
         "code" : "secur23",
@@ -70,21 +70,21 @@
     "ogrn": "314134 134134 13414",
     "securities": [
       {
-        "id": 1,
+        "id": 31,
         "endDate": "23.01.2021",
         "codeСurrency": "USD",
         "code" : "secur31",
         "value": 142412324
       },
       {
-        "id": 2,
+        "id": 32,
         "endDate": "03.09.2025",
         "codeСurrency": "EU",
         "code" : "secur32",
         "value": 3414144
       },
       {
-        "id": 3,
+        "id": 33,
         "endDate": "09.03.2028",
         "codeСurrency": "RUB",
         "code" : "secur33",
