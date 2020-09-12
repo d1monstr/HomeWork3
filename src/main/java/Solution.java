@@ -26,6 +26,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -46,13 +47,71 @@ public class Solution {
         //
         System.out.println();
         // Выводим информацию о просроченных ценных бумагах
-        solution.overdueSecutities(listOrganizations);
+        solution.overdueSecurities(listOrganizations);
+        //
+        System.out.println();
+        // Выводим организации основанные после указанной даты
+        solution.orgAfter(listOrganizations, "01/01/1996");
+        //
+        System.out.println();
+        // Выводим id и коды ценных бумаг по заданному коду валюты
+        solution.printSecuritiesOf(listOrganizations, "rub");
         //
 
 
     }
 
-    public void overdueSecutities(List<Organization> list){
+    public void printSecuritiesOf(List<Organization> list, String codeCurrency){
+        for (Organization organization : list){
+            for (Security security : organization.getSecurities()){
+                if (codeCurrency.toLowerCase().equals(security.getCodeСurrency().toLowerCase())){
+                    System.out.println("Id: " + security.getId() + " Код: " + security.getCode());
+                }
+            }
+        }
+    }
+
+    public void orgAfter(List<Organization> list, String date){
+        List<DateFormat> dateFormatList = new ArrayList<DateFormat>();
+        dateFormatList.add(new SimpleDateFormat("dd.MM.yyyy"));
+        dateFormatList.add(new SimpleDateFormat("dd.MM,yy"));
+        dateFormatList.add(new SimpleDateFormat("dd/MM/yyyy"));
+        dateFormatList.add(new SimpleDateFormat("dd/MM/yy"));
+
+        Date dateFormatted = null;
+        for (Organization organization : list){
+            try {
+                dateFormatted = dateFormatList.get(0).parse(date);
+            }
+            catch (ParseException e1){
+                try {
+                    dateFormatted = dateFormatList.get(1).parse(date);
+                }
+                catch (ParseException e2){
+                    try {
+                        dateFormatted = dateFormatList.get(2).parse(date);
+                    }
+                    catch (ParseException e3){
+                        try {
+                            dateFormatted = dateFormatList.get(3).parse(date);
+                        }
+                        catch (ParseException e4){
+                            System.out.println("Формат даты указан некорректно!");
+                        }
+                    }
+                }
+            }
+            try {
+                if (dateFormatted.compareTo(dateFormatList.get(0).parse(organization.getCreateDate())) < 0){
+                    System.out.println(organization.getOrganizationName() + " - " + dateFormatList.get(3).format(dateFormatList.get(0).parse(organization.getCreateDate())));
+                }
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void overdueSecurities(List<Organization> list){
         Date date = new Date();
         DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
         int count = 0;
