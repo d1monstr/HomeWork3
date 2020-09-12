@@ -1,8 +1,9 @@
 [
   {
     "organizationName": "OrgName1",
+    "createDate": "15.06.1992",
     "address": "Org Address 1",
-    "phone": ["+71111111111", "81111111111"],
+    "phone": "+71111111111",
     "inn": "6976 2452 134134 13441",
     "ogrn": "7686 09860 569578 08678",
     "securities": [
@@ -31,8 +32,9 @@
   },
   {
     "organizationName": "OrgName2",
+    "createDate": "11.01.1997",
     "address": "Org Address 2",
-    "phone": ["+72222222222", "82222222222"],
+    "phone": "+72222222222",
     "inn": "34314 25 321 41 134",
     "ogrn": "52535 235 2134 32432",
     "securities": [
@@ -61,8 +63,9 @@
   },
   {
     "organizationName": "OrgName3",
+    "createDate": "24.11.2002",
     "address": "Org Address 3",
-    "phone": ["+73333333333", "83333333333"],
+    "phone": "+73333333333",
     "inn": "343314 134134 134 134",
     "ogrn": "314134 134134 13414",
     "securities": [
