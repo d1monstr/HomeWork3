@@ -1,0 +1,92 @@
+[
+  {
+    "organizationName": "OrgName1",
+    "address": "Org Address 1",
+    "phone": ["+71111111111", "81111111111"],
+    "inn": "6976 2452 134134 13441",
+    "ogrn": "7686 09860 569578 08678",
+    "securities": [
+      {
+        "id": 1,
+        "endDate": "29.11.2024",
+        "codeСurrency": "USD",
+        "code" : "secur11",
+        "value": 5314314
+      },
+      {
+        "id": 2,
+        "endDate": "21.06.2033",
+        "codeСurrency": "EU",
+        "code" : "secur12",
+        "value": 1314314
+      },
+      {
+        "id": 3,
+        "endDate": "12.09.2027",
+        "codeСurrency": "RUB",
+        "code" : "secur13",
+        "value": 63532314
+      }
+    ]
+  },
+  {
+    "organizationName": "OrgName2",
+    "address": "Org Address 2",
+    "phone": ["+72222222222", "82222222222"],
+    "inn": "34314 25 321 41 134",
+    "ogrn": "52535 235 2134 32432",
+    "securities": [
+      {
+        "id": 1,
+        "endDate": "11.03.2022",
+        "codeСurrency": "USD",
+        "code" : "secur21",
+        "value": 1351513
+      },
+      {
+        "id": 2,
+        "endDate": "21.10.2031",
+        "codeСurrency": "EU",
+        "code" : "secur22",
+        "value": 53462414
+      },
+      {
+        "id": 3,
+        "endDate": "12.12.2022",
+        "codeСurrency": "RUB",
+        "code" : "secur23",
+        "value": 535255252
+      }
+    ]
+  },
+  {
+    "organizationName": "OrgName3",
+    "address": "Org Address 3",
+    "phone": ["+73333333333", "83333333333"],
+    "inn": "343314 134134 134 134",
+    "ogrn": "314134 134134 13414",
+    "securities": [
+      {
+        "id": 1,
+        "endDate": "23.01.2021",
+        "codeСurrency": "USD",
+        "code" : "secur31",
+        "value": 142412324
+      },
+      {
+        "id": 2,
+        "endDate": "03.09.2025",
+        "codeСurrency": "EU",
+        "code" : "secur32",
+        "value": 3414144
+      },
+      {
+        "id": 3,
+        "endDate": "09.03.2028",
+        "codeСurrency": "RUB",
+        "code" : "secur33",
+        "value": 63132312313
+      }
+    ]
+  }
+]
