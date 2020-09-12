@@ -1,11 +1,41 @@
-import java.util.List;
+import java.text.DateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class Organization {
-    public String organizationName;
-    public String address;
-    public List<String> phones;
-    public String inn;
-    public String ogrn;
-    public List<Security> securities;
+    private String organizationName;
+    private String createDate;
+    private String address;
+    private String phone;
+    private String inn;
+    private String ogrn;
+    private ArrayList<Security> securities;
 
+    public String getCreateDate() {
+        return createDate;
+    }
+
+    public String getOrganizationName() {
+        return organizationName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getInn() {
+        return inn;
+    }
+
+    public String getOgrn() {
+        return ogrn;
+    }
+
+    public ArrayList<Security> getSecurities() {
+        return securities;
+    }
 }
