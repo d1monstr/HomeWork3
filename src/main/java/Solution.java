@@ -44,8 +44,32 @@ public class Solution {
         // Выводим краткую информацию о компаниях
         solution.shortInfoOrg(listOrganizations);
         //
+        System.out.println();
+        // Выводим информацию о просроченных ценных бумагах
+        solution.overdueSecutities(listOrganizations);
+        //
 
 
+    }
+
+    public void overdueSecutities(List<Organization> list){
+        Date date = new Date();
+        DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+        int count = 0;
+        for (Organization organization : list){
+            for (Security security : organization.getSecurities()){
+                try {
+                    if (date.compareTo(dateFormat.parse(security.getEndDate())) > 0){
+                        count++;
+                        System.out.println("Код: " + security.getCode() + " Дата истечения: " + security.getEndDate() + " Организация: " + organization.getOrganizationName());
+                    }
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
+        System.out.println("Всего просрочено: " + count);
     }
 
     public void shortInfoOrg(List<Organization> list){
